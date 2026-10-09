@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quote Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>✨ Quote Generator</h1>
+        <p>Find inspiration and save your favorite quotes.</p>
+    </header>
+
+    <main>
+
+        <section class="quote-card">
+
+            <div id="quoteText">
+                Click the button to get a quote.
+            </div>
+
+            <div id="quoteAuthor">
+                — Unknown
+            </div>
+
+            <div class="buttons">
+
+                <button onclick="getQuote()">
+                    🎲 New Quote
+                </button>
+
+                <button onclick="saveFavorite()">
+                    ❤️ Favorite
+                </button>
+
+                <button onclick="copyQuote()">
+                    📋 Copy
+                </button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <section class="history">
+
+            <h2>❤️ Favorite Quotes History</h2>
+
+            <div id="favoritesList">
+                <p>No favorite quotes yet.</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+<footer>
+    Quotes provided by
+    <a href="https://zenquotes.io/" target="_blank">
+        ZenQuotes.io
+    </a>
+</footer>
+</body>
+</html>
